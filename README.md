@@ -1,1 +1,7 @@
 # Neuroscience_assignment
+
+## 1. Hodgkin-Huxley model
+The code simulates the behavior of a neuron using a simple model based on the Hodgkin-Huxley equations. It calculates the conductances of different ion channels and uses Ohm's law to compute the membrane current and update the membrane potential. Finally, it plots the membrane potential and conductances over time.
+
+## 2.leaky integrate-and-fire model
+This code simulates the membrane potential of a neuron and its response to various input strengths. The neuron model is based on the leaky integrate-and-fire model. The simulation is done for a period of 40 seconds with a time step of 0.1 ms. The neuron receives input at specific time points, and the input is constructed by setting the membrane potential to a constant value (RI) during a duration. The simulation checks if an action potential is elicited based on the membrane potential crossing a threshold value (theta). If an action potential is elicited, the membrane potential is reset to its resting potential (Vm), and the time of the action potential is added to a list. The simulation also includes a refractory period during which the neuron is not able to fire again, even if the membrane potential crosses the threshold value. After the refractory period, the simulation integrates the membrane potential with the current input signal. Finally, the code computes the firing frequency of the neuron for different input strengths and plots the results.
